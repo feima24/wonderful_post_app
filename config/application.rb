@@ -23,6 +23,12 @@ module WonderfulPostApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+     # デフォルトのlocaleを日本語(:ja)にする
+     config.i18n.default_locale = :ja
+     # デフォルトのタイムゾーンを日本に設定
+     config.time_zone = "Asia/Tokyo"
+     # DBに保存する時間（ActiveRecordのタイムスタンプ）を日本に設定
+     config.active_record.default_timezone = :local
 
     # Configuration for the application, engines, and railties goes here.
     #

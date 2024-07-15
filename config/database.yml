@@ -23,6 +23,7 @@ default: &default
   username: root
   password: root
   host: 127.0.0.1
+  timezone: Asia/Tokyo
 
 development:
   <<: *default

@@ -1,0 +1,8 @@
+   ja:
+     flash:
+       create_success: "作成が成功しました！"
+       create_failure: "作成に失敗しました！"
+       update_success: "更新が完了しました！"
+       update_failure: "更新に失敗しました！"
+       delete_success: "削除が成功しました！"
+       delete_failure: "削除に失敗しました！"
