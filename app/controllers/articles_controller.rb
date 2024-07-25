@@ -42,7 +42,7 @@ end
 # DELETE /articles/1
 def destroy
   @article.destroy
-  edirect_to articles_url, notice: "#{t('activerecord.models.article')}を削除しました。"
+   redirect_to articles_url, notice: "#{t('activerecord.models.article')}を削除しました。"
 end
 
   private
