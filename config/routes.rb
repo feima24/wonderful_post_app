@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
+  root to: 'articles#index'
+  get '/mypage', to: 'mypage#show'
   devise_for :users
+  resources :mypage, only: [:new, :create, :edit, :update, :destroy]
   resources :articles
-  delete '/users/sign_out' => 'devise/sessions#destroy'
-  root 'articles#index'
-  resources :sample_articles
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
