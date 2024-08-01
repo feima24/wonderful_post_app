@@ -10,13 +10,6 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   def show
     @article = Article.find(params[:id])
-
-    # article.tags を nil チェックしてから表示する
-    if @article.tags.present?
-      @tags = @article.tags
-    else
-      @tags = []
-    end
   end
 
   # GET /articles/new
